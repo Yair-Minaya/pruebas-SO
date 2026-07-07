@@ -48,34 +48,9 @@ cd cpu
 
 ________________________________________________________________________________
 
-comandos de valgrind: 
+comando de valgrind: 
 
-Terminal 1 — Kernel Memory (siempre primero, es el servidor base):
-bashcd kernel_memory
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_km.log ./bin/kernel_memory km.config
+  --log-file=valgrind_xx.log 
 
-Terminal 2 — Kernel Scheduler:
-bashcd kernel_scheduler
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_ks.log ./bin/kernel_scheduler ks.config proceso_inicial.txt
 
-Terminal 3 — Swap:
-bashcd swap
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_swap.log ./bin/swap swap.config
-
-Terminal 4 — Memory Stick:
-bashcd memory_stick
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_ms.log ./bin/memory_stick ms.config 1024
-
-Terminal 5 — CPU:
-bashcd cpu
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_cpu.log ./bin/cpu cpu.config 1
-
-Terminal 6 — IO (una por dispositivo, ej. SLEEP):
-bashcd io
-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-  --log-file=valgrind_io.log ./bin/io io.config SLEEP

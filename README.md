@@ -1,6 +1,7 @@
 # TP Laboratorio - Plug & Pray
 
 Guía de pasos para levantar el TP en la VM del laboratorio.
+link de git list : https://tinyurl.com/tp-so
 
 ---
 

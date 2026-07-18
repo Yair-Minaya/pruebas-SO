@@ -9,7 +9,7 @@ link de git list : https://tinyurl.com/tp-so
 
 - Abrir **PuTTY** — si en 2 PCs salta la misma IP, reiniciar PuTTY
 - **VM encendida y con internet** — en `Configuración → Red`, tener "Conectar a" en **Adaptador puente**
-- **Token de GitHub:** `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2`
+- **Token de GitHub:** `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2`
 - **Doc de pruebas:** [Google Docs](https://docs.google.com/document/d/1RXiJoIydnxEMyeMWZWnnxbLWWjYCIl3kHoA0mw322bA/edit?tab=t.0)
 
 ---
